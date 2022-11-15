@@ -1,5 +1,6 @@
 import React, { Component, useState, useRef, useEffect } from "react";
 import PropTypes from "prop-types";
+import {TextPropTypes} from 'deprecated-react-native-prop-types';
 import {
   StyleSheet,
   Text,
@@ -335,7 +336,7 @@ ActionButton.propTypes = {
   bgColor: PropTypes.string,
   bgOpacity: PropTypes.number,
   buttonColor: PropTypes.string,
-  buttonTextStyle: Text.propTypes.style,
+  buttonTextStyle: TextPropTypes.style
   buttonText: PropTypes.string,
 
   offsetX: PropTypes.number,
